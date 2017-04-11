@@ -1,0 +1,29 @@
+.content{
+	width: 500px;
+	margin: 0 auto;
+}
+.content h1{
+	font-size: 30px;
+	text-shadow: black 2px 2px 3px;
+	text-align: center;
+}
+.content h2{
+	font-size: 25px;
+}
+ 
+.content img{
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+	display: block;
+}
+.p-center{
+	padding-left: 110px;
+}
+h2{
+	padding-left: 70px;
+}
+p{
+	
+	padding-left: 100px;
+}

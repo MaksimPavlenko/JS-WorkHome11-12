@@ -1,0 +1,43 @@
+.container{
+    margin: 30px;
+}
+.scroll-img {
+  /*border: 1px solid red;*/
+    margin: 10 auto;
+    width: 680px;
+    height: 142px;
+    overflow: hidden;
+    font-size: 0;
+}
+.scroll-img ul {
+    width: 700px;
+    height: 600px;
+    margin: 0;
+}
+.scroll-img ul li {
+    display: inline-block;
+    margin: 10px 0 10px 10px;
+}
+#demo5.scroll-img ul {
+    width: 1500px;
+}
+#demo5-btn {
+    width: 680px;
+    padding-top: 10px;
+}
+.scroll-img img{
+    width: 125px;
+    height: 125px;
+}
+.arrow-left, .arrow-right{
+    float: left;
+}
+.arrow-left{
+    margin-left: 10%;
+}
+.clear{
+	  clear: both;
+}
+
+
+

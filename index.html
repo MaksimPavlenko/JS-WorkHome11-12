@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HomeWork_11-12</title>
+	<link href="css/style.css" rel="stylesheet" >
+	<link href="css/slide.css" rel="stylesheet">
+	<link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/tmpl.js"></script>
+	<script src="js/jquery.slidebox.js"></script>
+	<script src="js/script.js"></script>
+	
+</head>
+<body>
+	<div class="content">
+		<script type="text/template" id="home">
+
+			<div class="content">
+				<h1><%= myName %></h1>
+				<img src="<%= image %>" />
+				<p class="p-center"><%= pCenter %></p>
+				<hr>
+				<h2><%= learn %></h2>
+				<div class="about"><p><%= about %></p></div>
+				<h2><%= phoneTitle %></h2>
+				<p><%= phoneNumber %></p>
+				<h2><%= myProfile %></h2>
+				<p> <%= facebookUrl %><br>
+					<%= twitterUrl %>				
+				</p>
+				<hr>
+			</div>
+
+
+			<div class="container">
+				<div id="backward" class="arrow-left" >
+					<span><img src="img/fancy_nav_left.png" alt="" width="35px" style="margin-top: 50px;"></span>
+				</div>
+				<div id="demo5" class="scroll-img" style="float: left;">
+					<ul>
+					  <li><a href="#" target="_blank"><img src="img/img1.jpg"></a></li>
+					  <li><a href="#" target="_blank"><img src="img/img2.jpg"></a></li>
+					  <li><a href="#" target="_blank"><img src="img/img10.jpg"></a></li>
+					  <li><a href="#" target="_blank"><img src="img/img15.jpg"></a></li>
+					  <li><a href="#" target="_blank"><img src="img/img5.jpg"></a></li>
+					  <li><a href="#" target="_blank"><img src="img/img6.jpg"></a></li>
+					  <li><a href="#" target="_blank"><img src="img/img7.jpg"></a></li>
+					  <li><a href="#" target="_blank"><img src="img/img8.jpg"></a></li>
+					  <li><a href="#" target="_blank"><img src="img/img9.jpg"></a></li>
+					  <li><a href="#" target="_blank"><img src="img/img10.jpg"></a></li>
+					  <li><a href="#" target="_blank"><img src="img/img11.jpg"></a></li>
+					  <li><a href="#" target="_blank"><img src="img/img12.jpg"></a></li>
+					  <li><a href="#" target="_blank"><img src="img/img13.jpg"></a></li>
+					  <li><a href="#" target="_blank"><img src="img/img14.jpg"></a></li>
+					  <li><a href="#" target="_blank"><img src="img/img15.jpg"></a></li>
+					</ul>       
+				</div>
+				
+				<div id="forward" class="arrow-right" >
+					<span><img src="img/fancy_nav_right.png" alt="" width="35px" style="margin-top: 50px;"></span>
+				</div>
+			</div>
+		</script>
+	</div>
+	
+	
+			
+		<script>		  
+			$(function () {
+		  
+				$('#demo5').scrollbox({
+				  direction: 'h',
+				  distance: 134
+				});
+				$('#backward').click(function () {
+				  $('#demo5').trigger('backward');
+				});
+				$('#forward').click(function () {
+				  $('#demo5').trigger('forward');
+				});
+				
+			  });
+		</script>
+		
+</body>
+</html>
